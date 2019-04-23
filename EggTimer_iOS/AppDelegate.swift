@@ -35,6 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        // Reset data if “RESET_APP_KEY” key in UserDefaults is true.
+        // This will revert back the value of UserDefaults to false so that the switch in settings will toggle back to off state.
+        SettingsBundleHelper.checkAndExecuteSettings()
+        
+        // Set version and build data. For this to work, the app should run at least once after installing. Otherwise it will select the default value provided.
+        SettingsBundleHelper.setVersionAndBuildNumber()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

@@ -14,6 +14,9 @@
 		B471E3B92142AFFB00C76A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B471E3B72142AFFB00C76A7F /* LaunchScreen.storyboard */; };
 		B471E3C42142AFFB00C76A7F /* EggTimer_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471E3C32142AFFB00C76A7F /* EggTimer_iOSTests.swift */; };
 		B471E3CF2142AFFC00C76A7F /* EggTimer_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471E3CE2142AFFC00C76A7F /* EggTimer_iOSUITests.swift */; };
+		B471E3DE2142B46600C76A7F /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B471E3DD2142B46600C76A7F /* ding.mp3 */; };
+		B471E3E02142C23600C76A7F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B471E3DF2142C23600C76A7F /* Settings.bundle */; };
+		B471E3E22142C68C00C76A7F /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B471E3E12142C68C00C76A7F /* SettingsBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B471E3CA2142AFFC00C76A7F /* EggTimer_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimer_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B471E3CE2142AFFC00C76A7F /* EggTimer_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer_iOSUITests.swift; sourceTree = "<group>"; };
 		B471E3D02142AFFC00C76A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B471E3DD2142B46600C76A7F /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		B471E3DF2142C23600C76A7F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B471E3E12142C68C00C76A7F /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,16 @@
 		B471E3AD2142AFFA00C76A7F /* EggTimer_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B471E3DC2142B41400C76A7F /* Model */,
 				B471E3AE2142AFFA00C76A7F /* AppDelegate.swift */,
 				B471E3B02142AFFA00C76A7F /* ViewController.swift */,
-				B471E3B22142AFFA00C76A7F /* Main.storyboard */,
 				B471E3B52142AFFB00C76A7F /* Assets.xcassets */,
+				B471E3B22142AFFA00C76A7F /* Main.storyboard */,
+				B471E3DF2142C23600C76A7F /* Settings.bundle */,
 				B471E3B72142AFFB00C76A7F /* LaunchScreen.storyboard */,
+				B471E3DD2142B46600C76A7F /* ding.mp3 */,
 				B471E3BA2142AFFB00C76A7F /* Info.plist */,
+				B471E3E12142C68C00C76A7F /* SettingsBundleHelper.swift */,
 			);
 			path = EggTimer_iOS;
 			sourceTree = "<group>";
@@ -123,6 +133,13 @@
 				B471E3D02142AFFC00C76A7F /* Info.plist */,
 			);
 			path = EggTimer_iOSUITests;
+			sourceTree = "<group>";
+		};
+		B471E3DC2142B41400C76A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B471E3DE2142B46600C76A7F /* ding.mp3 in Resources */,
 				B471E3B92142AFFB00C76A7F /* LaunchScreen.storyboard in Resources */,
+				B471E3E02142C23600C76A7F /* Settings.bundle in Resources */,
 				B471E3B62142AFFB00C76A7F /* Assets.xcassets in Resources */,
 				B471E3B42142AFFA00C76A7F /* Main.storyboard in Resources */,
 			);
@@ -257,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B471E3B12142AFFA00C76A7F /* ViewController.swift in Sources */,
+				B471E3E22142C68C00C76A7F /* SettingsBundleHelper.swift in Sources */,
 				B471E3AF2142AFFA00C76A7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
